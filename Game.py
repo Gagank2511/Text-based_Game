@@ -1,3 +1,32 @@
+def create_character():
+    print("Welcome to the character creation process!")
+    
+    name = input("Enter your character's name: ")
+    
+    character = {
+        "name": name,
+    }
+    
+    print("Character creation successful!")
+    print("Character Details:")
+    print(f"Name: {character['name']}")
+
+# Call the function to create a character
+create_character()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # This is the default function before editing (don't touch)
     # player_input = input(
     #     "...\n")
