@@ -77,7 +77,10 @@ def follow_dragon():
 
 
 def follow_father(): # You follow your father to defend the town
-    print("...") # Meet a gruesome fate alongside him
+    print("You decide to follow your father, despite the risks.\n"
+       "You find him and his small detachment of guards trying to pepper the dragon with arrows.\n"
+       "Unfortunately, this does practically nothing to the creature besides annoy it.\n"
+       "Once the dragon has finished devouring your father and his men it turns its attention to you, roaring.\n") # Meet a gruesome fate alongside him
 
 
 def goblin_cave(): # Arrive at goblin shaman's cave
