@@ -12,15 +12,16 @@
 
 def armoury(): # In armoury looking for sword
     global has_sword
-    player_input = input(
-        "...\n")
+    player_input = input("You run to the armoury to grab a sword.\n"
+                        "He grabs a sword and returns to find his father has gone to fight the dragon.\n"
+                        "Do you want to 'take' a sword from the armoury?\n")
     while True:
-        if player_input.lower() == "...": # Takes sword from armoury
+        if player_input.lower() == "take": # Takes sword from armoury
             has_sword = True
+            print("You take a sword from the armoury and head back.\n")
             town_destroyed()
         else:
-            player_input = input(
-                "Invalid input, please try again. ...\n")
+            player_input = input("Invalid input, please try again. TAKE a sword from the armoury.\n")
             continue
 
 
