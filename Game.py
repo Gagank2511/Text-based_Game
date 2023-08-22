@@ -132,16 +132,20 @@ START the game or NOT?\n""")
 
 
 def steal_book(): # You steal a magic book from the goblin shaman
-    player_input = input(
-        "...\n")
+    player_input = input("You arrive in the cave and find the shaman doing some cleaning.\n"
+                        "You can steal one of his magic books stealthily or try to kill him and take more.\n"
+                        "Do you want to 'steal' a magic book, or 'attack' the shaman?\n")
+
     while True:
-        if player_input.lower() == "...": # Pursue the dragon
+        if player_input.lower() == "steal": # Pursue the dragon
+            print("You steal a magic book and a spellbook from the shaman.")
+           # Add your logic for what happens after the stealing the books
             follow_dragon()
         else:
-            player_input = input(
-                "Invalid input, please try again. ...\n")
+            player_input = input("Invalid input, please try again. \n")
             continue
-
+# Call the function to start the scenario
+steal_book()
 
 def swear_vengeance(): # Swear to avenge your father
     # Can only go to cave without spellbook, go to market without sword or pursue dragon if have either a spellbook or a sword
